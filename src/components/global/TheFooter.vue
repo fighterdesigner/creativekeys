@@ -1,5 +1,5 @@
 <template>
-<footer class="container-fluid p-4 text-light">
+<footer class="container-fluid p-4">
     <div class="row justify-content-center p-3 text-center text-md-start">    
     <div class="col-12 col-md-6 col-lg-3 my-3">
         <h5>À propos</h5>
@@ -47,14 +47,15 @@ export default {
 
 <style>
     footer {
-        background-color: #FFA726;
+        background-color:#e6e6e6;
+        color: #616161
     }
     footer i {
         font-size: 20px;
-        color: white
+        color: #616161
     }
     .social-media i:hover {
-        color: #FB8C00
+        color: #000
     }
     footer > div:first-child {
         margin-bottom: 40px

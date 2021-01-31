@@ -24,21 +24,18 @@ export default {
 </script>
 
 <style lang="scss">
-
+    html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif !important
+    }
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FB8C00
+  background: #000
 }    
-    
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
 #nav {
   padding: 30px;

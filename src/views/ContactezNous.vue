@@ -2,7 +2,7 @@
   <div class="container contactez-nous">
       
     <div class="contact-head py-5 mt-5 mb-0">
-        <h2>Contactez nous</h2>
+        <h2 class="text-center">Contactez nous</h2>
         <p class="h5 col-8 text-center my-4 mx-auto">Si vous avez des questions ou un problème, vous pouvez nous contacter ou visiter notre entreprise en utilisant la carte ci-dessous.</p>
     </div>  
     <iframe class="shadow mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6489.481164036274!2d-5.345709725224254!3d35.584794320867175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b430d8e82be69%3A0x6820b3b886dfd128!2sCreativeKeys!5e0!3m2!1sfr!2s!4v1512145466962" frameborder="0" allowfullscreen=""></iframe>
@@ -61,10 +61,6 @@ export default {
         margin: 0 auto
     }
     form .btn {
-        background-color: #FFA726 !important;
-    }
-    .form-select:focus {
-        border-color: #FFA726;
-        box-shadow: 0 0 0 0.25rem rgba(255,167,38, .25)
+        background-color: #000 !important;
     }
 </style>

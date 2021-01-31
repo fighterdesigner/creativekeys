@@ -1,17 +1,18 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container pt-md-5 px-md-5">
+<nav class="navbar navbar-expand-lg navbar-light bg-white text-black">
+  <div class="container">
     <img src="../../assets/images/logo.png" class="navbar-brand">
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="border-0 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<!--      <span class="navbar-toggler-icon"></span>-->
+        <i @click="ToggleAclass()" id="icon" class="fas fa-bars"></i>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+    <div class="collapse text-center navbar-collapse justify-content-center" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li @click="hidenav()" class="nav-item">
           <router-link class="nav-link" to="/" exact>Accueil</router-link>
         </li>
         <li @click="hidenav()" class="nav-item">
-          <a data-scroll class="nav-link" href="#produits">Produits</a>
+          <a data-scroll class="nav-link" href="">Produits</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,7 +42,11 @@
             hidenav() {
             
                 document.getElementById("navbarNavDropdown").classList.remove("show");
-        }
+        },
+            ToggleAclass() {
+                
+                document.getElementById("icon").classList.toggle("fa-times");
+            }
     }
         
         
@@ -49,23 +54,23 @@
 </script>
 
 <style scoped>
-    nav {
-        background-color: transparent
-    }
     .navbar-brand {
-     width: 45px  
+     width: 140px  
     }
     
-    li > a {
-        color: #FB8C00 !important
+    .nav-link:before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        display: block;
+        transform: translateY(27px);
+        opacity: 0
     }
-    
-    .navbar-light .navbar-toggler {
-        color: transparent;
-        background-color: transparent
+    .nav-link:hover:before {
+        opacity: 1
     }
-    .nav-link:hover {
-        color: #FFA726 !important
+    #icon {
+        font-size: 25px
     }
-
 </style>
